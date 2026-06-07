@@ -153,25 +153,40 @@ export default function TeamPanel({
             </div>
 
             {/* bottom-anchored identity block */}
-            <motion.div
-              initial={{ opacity: 0, y: 18 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: reduce ? 0 : 0.08, duration: reduce ? 0 : 0.4 }}
-              className="max-w-2xl"
-            >
-              <h3 className="font-display text-5xl font-extrabold leading-[0.92] tracking-tight text-paper drop-shadow-xl lg:text-7xl">
+            <div className="max-w-2xl">
+              <motion.h3
+                initial={{ opacity: 0, y: 16 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: reduce ? 0 : 0.2, duration: reduce ? 0 : 0.4 }}
+                className="font-display text-5xl font-extrabold leading-[0.92] tracking-tight text-paper drop-shadow-xl lg:text-7xl"
+              >
                 <span className="block">{member.firstName}</span>
                 {member.lastName && <span className="block opacity-75">{member.lastName}</span>}
-              </h3>
-              <p className="mt-3 text-base font-medium uppercase tracking-[0.18em] text-paper drop-shadow">
+              </motion.h3>
+              <motion.p
+                initial={{ opacity: 0, y: 14 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: reduce ? 0 : 0.4, duration: reduce ? 0 : 0.35 }}
+                className="mt-3 text-base font-medium uppercase tracking-[0.18em] text-paper drop-shadow"
+              >
                 {member.role}
-              </p>
+              </motion.p>
 
-              <p className="mt-6 max-w-xl text-lg leading-relaxed text-paper drop-shadow">
+              <motion.p
+                initial={{ opacity: 0, y: 14 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: reduce ? 0 : 0.6, duration: reduce ? 0 : 0.35 }}
+                className="mt-6 max-w-xl text-lg leading-relaxed text-paper drop-shadow"
+              >
                 {member.bio}
-              </p>
+              </motion.p>
               {member.funFact && (
-                <div className="mt-6 inline-flex max-w-xl items-center gap-3 rounded-2xl border border-paper/30 bg-black/35 px-5 py-3 shadow-[0_18px_50px_-12px_rgba(0,0,0,0.7)] backdrop-blur-sm">
+                <motion.div
+                  initial={{ opacity: 0, y: 12 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: reduce ? 0 : 0.8, duration: reduce ? 0 : 0.35 }}
+                  className="mt-6 inline-flex max-w-xl items-center gap-3 rounded-2xl border border-paper/30 bg-black/35 px-5 py-3 shadow-[0_18px_50px_-12px_rgba(0,0,0,0.7)] backdrop-blur-sm"
+                >
                   <span
                     className="font-display text-lg font-extrabold leading-none"
                     style={{ color: accent }}
@@ -187,15 +202,20 @@ export default function TeamPanel({
                       {member.funFact}
                     </span>
                   </span>
-                </div>
+                </motion.div>
               )}
 
-              <div className="mt-7 flex items-center gap-5">
+              <motion.div
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: reduce ? 0 : 1.0, duration: reduce ? 0 : 0.35 }}
+                className="mt-7 flex items-center gap-5"
+              >
                 <div className="inline-flex items-center rounded-full bg-paper px-3 py-2">
                   <Socials links={member.links} />
                 </div>
-              </div>
-            </motion.div>
+              </motion.div>
+            </div>
           </motion.div>
         )}
       </AnimatePresence>
