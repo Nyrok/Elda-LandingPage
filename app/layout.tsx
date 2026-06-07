@@ -24,7 +24,7 @@ const logo = localFont({
 export const metadata: Metadata = {
   title: "ELDA",
   description:
-    "Elda is an AI-powered robotic arm that helps elderly people live independently — managing medication, watching over them, and acting in an emergency.",
+    "Elda is an AI-powered robotic arm that helps elderly people live independently: managing medication, watching over them, and acting in an emergency.",
 };
 
 export default function RootLayout({

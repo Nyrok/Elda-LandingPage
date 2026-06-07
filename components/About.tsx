@@ -3,8 +3,8 @@
 import { motion } from "motion/react";
 
 const stats = [
-  { n: "0", l: "missed or double doses" },
-  { n: "Seconds", l: "from a fall to help on the way" },
+  { n: "25%", l: "of readmissions trace back to a missed pill" },
+  { n: "€49", l: "per month\none readmission funds eight years" },
   { n: "24/7", l: "eyes on, so no one is left alone" },
 ];
 
@@ -15,6 +15,7 @@ const facts = [
   { k: "Interaction", v: "Just talk to it. Voice or text." },
   { k: "The robot", v: "Runs on the low-cost, open SO-101 arm" },
   { k: "Why now", v: "Cheap open robotics meets foundation AI" },
+  { k: "Pricing", v: "€49/month rental. No upfront cost." },
 ];
 
 export default function About() {
@@ -29,11 +30,12 @@ export default function About() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: i * 0.1 }}
+            className="flex flex-col items-center justify-center"
           >
-            <div className="font-display text-5xl font-extrabold tracking-tight lg:text-6xl">
+            <div className="font-display text-center text-5xl font-extrabold tracking-tight lg:text-6xl">
               {s.n}
             </div>
-            <div className="mt-2 max-w-[16rem] text-sm uppercase tracking-[0.16em] text-ink-soft">
+            <div className="mt-2 max-w-[16rem] whitespace-pre-line text-center text-sm uppercase tracking-[0.16em] text-ink-soft">
               {s.l}
             </div>
           </motion.div>
@@ -67,6 +69,11 @@ export default function About() {
             most: it gets the right pill to them at the right time, keeps watch for
             trouble, and calls for help the instant something goes wrong.
             Independence for them. Peace of mind for the people who love them.
+          </p>
+          <p className="mt-4 max-w-xl text-lg leading-relaxed text-ink-soft">
+            We rent Elda directly to families at €49 a month. Our first market
+            is Hong Kong, where Bupa, with 400,000 members and a new plan
+            targeting retirees, already pays for the readmissions we prevent.
           </p>
           <p className="mt-6 text-sm font-semibold uppercase tracking-[0.18em] text-harbour">
             Already real: live SO-101 control, on-device perception, and a voice

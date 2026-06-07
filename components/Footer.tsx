@@ -15,7 +15,7 @@ export default function Footer() {
         </p>
 
         <div className="mt-20 flex flex-col gap-2 border-t border-paper/15 pt-6 text-sm text-paper/55 sm:flex-row sm:items-center sm:justify-between">
-          <span>Elda — an AI robotic arm for elderly care</span>
+          <span>Elda · an AI robotic arm for elderly care</span>
           <span className="font-display uppercase tracking-[0.2em]">
             Elderly care robotics · Built by four
           </span>

@@ -39,7 +39,7 @@ export default function Hero() {
           transition={{ duration: 0.7, ease, delay: 0.1 }}
           className="mb-6 text-base uppercase tracking-[0.22em] text-ink-soft"
         >
-          Helping older people live independently
+          A caregiver can&apos;t be in two places at once. Elda can.
         </motion.p>
 
         <h1 className="font-display text-[15vw] font-extrabold leading-[0.86] tracking-[-0.03em] sm:text-[12vw] lg:text-[9.5rem]">
