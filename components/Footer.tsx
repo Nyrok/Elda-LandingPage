@@ -10,7 +10,7 @@ export default function Footer() {
 
       <div className="relative z-10">
         <p className="font-display max-w-3xl text-4xl font-extrabold leading-[1.02] tracking-tight lg:text-6xl">
-          Let&apos;s bring Elda
+          Let&apos;s bring <span className="font-logo">Elda</span>
           <span className="text-coral"> home.</span>
         </p>
 
