@@ -26,7 +26,7 @@ export const team: Member[] = [
     lastName: "Nguyen",
     role: "AI Robotics Engineer",
     bio: "Master's student in Artificial Intelligence with a strong passion for robotics, entrepreneurship, and building technology that solves real-world problems. I was first fascinated by robots and later discovered AI as the missing piece that enables machines to perceive, reason, and act autonomously. Today, I focus on Physical AI and embodied intelligence, exploring how cutting-edge research can be transformed into impactful products and scalable solutions.",
-    funFact: "First in line at 7 AM, before the hackathon even opened.",
+    funFact: "First in line at 7 AM, before the hackathon opened.",
     photo: "/members/minh.jpg",
     links: {
       linkedin: "https://www.linkedin.com/in/minh-nhut-nguyen-474ab1259/",
@@ -52,9 +52,9 @@ export const team: Member[] = [
     lastName: "Sydorov",
     role: "AI Robotics Engineer",
     bio: "21, Computer Science student at TU Berlin and R&D engineer in aerospace & defense. Building robots, autonomous systems, Physical AI, and AI-powered products across software and hardware. Contributed to one of Germany's few student satellites. Most interested in solving challenging engineering problems at the intersection of AI and the physical world.",
-    funFact: "Keeps correcting Hamza's pronunciation of \"Deutsche\".",
+    funFact: "Corrects Hamza's \"Deutsche\" every time.",
     photo: "/members/myron.jpg",
-    links: { linkedin: "https://www.linkedin.com/in/myron-sydorov-271a693a8/" },
+    links: { github: "https://github.com/myroness", linkedin: "https://www.linkedin.com/in/myron-sydorov-271a693a8/" },
   },
   {
     name: "Gauthier Boula de Mareuil",
